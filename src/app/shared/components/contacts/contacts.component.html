@@ -1,0 +1,40 @@
+<section class="contactUs mt-75 mb-75">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="commonHeading ">
+                    CONTACT US
+                </p>
+                <hr class="orange m-auto">
+                <p class="para m-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+                    <input type="text" name="name" ngModel placeholder="Name" class="form-control formFields">
+                    <input type="email" name="email" ngModel placeholder="Email" class="form-control mt-3 formFields">
+                    <input type="password" name="password" ngModel placeholder="Password" class="form-control mt-3 mb-3 formFields">
+                    <button class="btn btn-lg bg-orange d-none"#getStartedBtn>Get Started</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <textarea rows="5" class="form-control formFields customMargin" placeholder="Message"></textarea>
+            </div>
+            <div class="col-md-12 text-center mt-4">
+                <button class="btn btn-orange text-white">Send Message</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="socialContacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <app-social-icons></app-social-icons>
+            </div>
+        </div>
+    </div>
+</section>

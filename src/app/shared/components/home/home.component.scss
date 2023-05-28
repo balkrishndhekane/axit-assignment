@@ -1,0 +1,72 @@
+.heroImg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      // url(../../../../assets/images/HeroImg.png);
+      url(../../../../assets/images/HeroImg.png);
+    height: 95vh;
+    background-size: cover;
+  }
+  .logo {
+    height: 40px;
+    width: 125px;
+  }
+  .header-info p {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+  }
+  hr{
+    border-color: #fff!important;
+  }
+  .header-para p {
+    font-family: "Raleway", sans-serif;
+    font-weight: light;
+    font-size: 16px;
+  }
+  
+  .highlight {
+    color: #ff8b38;
+  }
+  .card-header p {
+    color: #333333;
+    font-size: 20px;
+  }
+  .bg-orange{
+      background-color: #ff9b51;
+  }
+  .card{
+    border: 0;
+    text-align: center;
+  }
+  .card-footer span{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+  }
+  .socialHeading{
+    color: #333333;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  .socialInfo{
+    color: #86878b;
+    font-size: 14px;
+  }
+  .socialIcon{
+    margin-top: 25px;
+  }
+  
+  
+  @media only screen and (max-width: 900px){
+  
+  .mtop{
+    margin-top: 250px;
+  }
+  }
+
+  @media only screen and (max-width: 600px){
+  
+    .mt-110{
+      margin-top: 60px;
+    }
+    }

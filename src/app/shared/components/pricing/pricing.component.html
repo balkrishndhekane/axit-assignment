@@ -1,0 +1,63 @@
+<section class="pricing">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p class="commonHeading mt-110">
+                    PRICING OPTIONS
+                </p>
+                <hr class="orange m-auto">
+                <p class="para mt-3 mb-115">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" [class.movement]="obj.popularity" *ngFor="let obj of subscriptionArray">
+                <ul class="list-group d-flex mb-100 text-center">
+                        <li class="list-group-item premium">
+                            <span>{{obj.subscription}}</span>
+                        </li>
+                        <li class="list-group-item premium bottomBorder">
+                            <span class="dollar">$</span><span class="number">{{obj.cost}}</span>
+                            <p class="subscription">{{obj.time}}</p>
+                        </li>
+                        <li class="list-group-item" *ngIf="obj.popularity" [ngStyle]="{'background-color': '#ff8b38'}">
+                            <span class="benefits" [ngStyle]="{'color': '#fff', 'font-size': '14px', 'font-weight': 'bold'}">
+                                {{obj.popularity}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="benefits">
+                                {{obj.benefits.space}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="benefits">
+                                {{obj.benefits.bandwidth}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="benefits">
+                                {{obj.benefits.websites}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="benefits">
+                                {{obj.benefits.customization}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="benefits">
+                                {{obj.benefits.integration}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="benefits">
+                                {{obj.benefits.support}}
+                            </span>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

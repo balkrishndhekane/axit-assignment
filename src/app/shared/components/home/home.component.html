@@ -1,0 +1,58 @@
+<section class="heroImg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="header-info mt-110">
+                    <div class="header-logo">
+                        <img src="../../../../assets/images/Logo.png" alt="logo" class="logo" >
+                    </div>
+                    <div class="header-info mt-4 mb-2">
+                        <p>
+                            MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+                        </p>
+                    </div>
+                    <hr class="orange">
+                    <div class="header-para mt-2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo
+                        </p>
+                    </div>
+                    <button class="btn btn-download">Download</button>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-2">
+                <div class="form mt-110">
+                    <div class="card mb-5">
+                        <div class="card-header pb-0">
+                            <p><strong>Try Your <span class="highlight">Free</span> Trial Today</strong></p>
+                        </div>
+                        <div class="card-body">
+                            <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+                                <input type="text" name="name" ngModel placeholder="Name" class="form-control formFields">
+                                <input type="email" name="email" ngModel placeholder="Email" class="form-control mt-3 formFields">
+                                <input type="password" name="password" ngModel placeholder="Password" class="form-control mt-3 mb-3 formFields">
+                                <button class="btn btn-lg bg-orange d-none" #getStartedBtn type="button">Get Started</button>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center bg-orange">
+                            <span class="btn">Get Started</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="social-Icons">
+    <div class="container mtop">
+        <div class="row">
+            <div class="col-md-5">
+                <p class="socialHeading mb-0">Social Media</p>
+                <p class="socialInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.</p>
+            </div>
+            <div class="col-md-7 socialIcon">
+                <app-social-icons></app-social-icons>
+            </div>
+        </div>
+    </div>
+</section>
